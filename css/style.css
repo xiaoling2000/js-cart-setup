@@ -15,6 +15,15 @@ body {
   color: var(--mainBlack);
 }
 /* nav links */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
 .navbar-toggler {
   outline: none !important;
 }
@@ -81,15 +90,16 @@ body {
 /* endo of banner */
 /* cart  */
 .cart {
-  position: absolute;
+  position: fixed;
   min-height: 10rem;
   background: var(--mainWhite);
-  top: 0;
+  top: 50px;
   right: 0;
   transition: all 0.3s ease-in-out;
   background: rgba(255, 255, 255, 0.5);
   width: 0;
   overflow: hidden;
+  z-index: 1;
 }
 .show-cart {
   width: 18rem;
